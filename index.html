@@ -11,28 +11,315 @@
 </head>
 
 <body>
-    <div class="left-nav">
-        <a href="#introduction">Introduction</a>
-        <a href="#comments">Comments</a>
-        <a href="#user-input">User Input</a>
-        <a href="#functions">Functions</a>
-        <a href="#oop">OOP</a>
-        <a href="#constructors">Contructors</a>
-        <a href="#encapsulation">Encapsulation</a>
-        <a href="#inheritance">Inheritance</a>
-        <a href="#polymorphism">Polymorphism</a>
+    <div class="left-sidebar">
+
+        <div class="left-nav">
+            <h2 class="h2-left"><span>C++ Docs</span></h2>
+            <a href="#introduction">Introduction</a>
+            <a href="#comments">Comments</a>
+            <a href="#user-input">User Input</a>
+            <a href="#functions">Functions</a>
+            <a href="#oop">OOP</a>
+            <a href="#constructors">Contructors</a>
+            <a href="#encapsulation">Encapsulation</a>
+            <a href="#inheritance">Inheritance</a>
+            <a href="#polymorphism">Polymorphism</a>
+
+            <div class="about">
+                <a href="#about">About Us</a>
+            </div>
+        </div>
     </div>
 
     <div class="main">
-        <h1>C++ Documentation</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi at reiciendis debitis dicta maxime aut saepe
-            similique nesciunt sunt tempore praesentium asperiores rem, tenetur quos quia odio dolores. Odit officia
-            officiis accusantium facilis optio mollitia maiores deserunt! Nesciunt repudiandae quas, modi ut omnis
-            excepturi maiores incidunt veniam quos tenetur dolorum odio, quae earum labore doloribus sapiente illum
-            ullam rerum neque provident enim eaque obcaecati quidem consectetur? Libero dignissimos fugit ipsa autem
-            tenetur provident omnis tempora expedita est cupiditate minus consectetur dolores alias eveniet maiores
-            repellendus placeat asperiores, perspiciatis animi sit. Amet consequatur aperiam iusto, saepe dolores qui?
-            Tenetur, dicta et.</p>
+        <div class="main-title">
+            <div class="main-title-text">
+                <h1 style="font-size:50px">C++</h1>
+                <p>Add some text here</p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="introduction" class="topic">
+            <h1 class="topic-title">C++ Introduction</h1>
+            <p>C++ is a cross-platform language that can be used to create high-performance applications.
+                <br>
+                C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+                <br>
+                C++ gives programmers a high level of control over system resources and memory.
+                <br>
+                The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.
+            </p>
+
+            <h3 class="subtitle">Why Learn C++</h3>
+            <p>
+                C++ is one of the world's most popular programming languages.
+                <br>
+                C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+                <br>
+                C++ is an object-oriented programming language which gives a clear structure to programs and allows
+                code
+                to be reused, lowering development costs.
+
+                <br>
+                C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+                <br>
+                C++ is fun and easy to learn!
+
+                <br>
+                As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
+            </p>
+
+            <h3 class="subtitle">Simple Program</h3>
+            <div class="code">
+                <div class="code-inner">
+                    #include iostream
+                    <br><br>
+                    <span style="color:blue">int</span>
+                    main() {
+                    <br>
+                    &nbsp;&nbsp; cout << <span style="color:red">"SayabiDevs Full Stack Development Trainee
+                        Programme"</span>;
+                        <br>
+                        &nbsp;&nbsp;
+                        <span style="color:blue">return</span>
+                        0;
+                        <br>
+                        }
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div id="comments" class="topic">
+            <h1 class="topic-title">Comments</h1>
+            <p>
+                Comments can be used to explain C++ code, and to make it more readable. It can also be used to
+                prevent
+                execution when testing alternative code. Comments can be singled-lined or multi-lined.
+            </p>
+
+            <h3 class="subtitle">Single Line Comments</h3>
+            <p>
+                C++ is one of the world's most popular programming languages.
+                <br>
+                C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+                <br>
+                C++ is an object-oriented programming language which gives a clear structure to programs and allows
+                code
+                to be reused, lowering development costs.
+
+                <br>
+                C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+                <br>
+                C++ is fun and easy to learn!
+
+                <br>
+                As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
+            </p>
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:green">// This is a single line comment</span>
+                    <br>
+                    <span style="color:green">// This is another single line comment</span>
+                    <br>
+                    cout << <span style="color:red">"Hello World"</span>;
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div id="user-input" class="topic">
+            <h1 class="topic-title">User Input</h1>
+            <p>
+                Comments can be used to explain C++ code, and to make it more readable. It can also be used to
+                prevent
+                execution when testing alternative code. Comments can be singled-lined or multi-lined.
+            </p>
+
+            <h3 class="subtitle">Single Line Comments</h3>
+            <p>
+                As studied earlier, <code>cin</code> is used to output text to console
+                <br>
+                Similarly, <code>cin</code> is used with <code>>></code> to take input from the user
+            </p>
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    #include iostream
+                    <br><br>
+                    <span style="color:blue">int</span>
+                    main() {
+                    <br>
+                    &nbsp;&nbsp;<span style="color:blue">int</span>
+                    num;
+                    <br>
+                    &nbsp;&nbsp;cout << <span style="color:red">"Enter a number"</span>;
+                        <br>
+                        &nbsp;&nbsp;cin >> num</span>;
+                        <br>
+                        &nbsp;&nbsp;cout << <span style="color:red">"You entered"</span>
+                            << num; <br>
+                                &nbsp;&nbsp;<span style="color:blue">return</span>
+                                0;
+                                <br>
+                                }
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+
+
+        <div id="functions" class="topic">
+            <h1 class="topic-title">Functions</h1>
+            <p>A function is a block of code which only runs when it is called.
+
+                You can pass data, known as parameters, into a function.
+
+                Functions are used to perform certain actions, and they are important for reusing code: Define the code
+                once, and use it many times.
+            </p>
+
+            <h3 class="subtitle">Creating Function</h3>
+            <p>
+                To create a function, specify the name of the function, followed by parentheses <strong>()</strong>:
+            </p>
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:blue">void</span>
+                    func() {
+                    <br>
+                    &nbsp;&nbsp;cout << <span style="color:red">"This is a function"</span>;
+                        <br>
+                        }
+                </div>
+                <br>
+            </div>
+
+            <h3 class="subtitle">Calling a function</h3>
+            <p>
+                Declared functions are not executed immediately. They are "saved for later use", and will be executed
+                later, when they are called.
+            </p>
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:blue">void</span>
+                    func() {
+                    <br>
+                    &nbsp;&nbsp;cout << <span style="color:red">"This is a function"</span>;
+                        <br>
+                        }
+                        <br><br>
+                        <span style="color:blue">int</span>
+                        main() {
+                        <br>
+                        &nbsp;&nbsp;func();
+                        <br>
+                        &nbsp;&nbsp;<span style="color:blue">return</span>
+                        0;
+                        <br>
+                        }
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div id="oop" class="topic">
+            <h1 class="topic-title">Object Oriented Programming (OOP)</h1>
+            <p>OOP stands for Object-Oriented Programming.
+
+                Procedural programming is about writing procedures or functions that perform operations on the data,
+                while object-oriented programming is about creating objects that contain both data and functions.
+            </p>
+
+            <h3 class="subtitle">Class</h3>
+            <p>
+                A class is a template definition of the method(s) and variable(s) in a particular kind of object
+            </p>
+
+            <h3 class="subtitle">Object</h3>
+            <p>
+                An Object is a specific instance of a class
+                <br>
+                It contains real values instead of variables
+            </p>
+
+            <h3 class="subtitle">Creating a Class</h3>
+            <p>
+                <code>class</code> keyword is used to create a new class
+            </p>
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:blue">class</span>
+                    Student {
+                    <br>
+                    &nbsp;&nbsp;<span style="color:brown">public:</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+                    rollNo;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">string</span>
+                    name;
+                    <br>
+                    };
+                </div>
+                <br>
+            </div>
+            <br>
+            <ul>
+                <li>The <code>class</code> keyword is used to create a class called <code>Students</code>.</li>
+                <li>The keyword <code>public</code> is an <strong>access specifier</strong>, which specifies that
+                    members (attributes and
+                    methods) of the class are accessible from outside the class.</li>
+                <li>Inside the class, there is an integer variable <code>rollNo</code> and a string variable
+                    <code>name</code>. When variables are declared within a class, they are called
+                    <strong>attributes</strong>.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="topic" id="about">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="images/sufiyaan.JPG" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Sufiyaan Usmani</b></h4>
+                            <p><a href="">usmanisufiyaan@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/zohaib.JPG" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Zohaib Ahmed</b></h4>
+                            <p><a href="">zhbah234@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/usama.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Muhammad Usama</b></h4>
+                            <p><a href="">mu155225@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
