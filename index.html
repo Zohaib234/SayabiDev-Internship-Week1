@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ Docs</title>
-    <link rel="icon" type="image/x-icon" href="/images/c++.png">
+    <link rel="icon" href="images/c++.ico" sizes="any">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -74,7 +74,7 @@
             <h3 class="subtitle">Simple Program</h3>
             <div class="code">
                 <div class="code-inner">
-                    #include iostream
+                    <span style="color:green">#include</span> &lt;iostream&gt;
                     <br><br>
                     <span style="color:blue">int</span>
                     main() {
@@ -289,7 +289,213 @@
             </ul>
         </div>
         <hr>
+
+
+        <div id="constructors" class="topic">
+            <h1 class="topic-title">Constructors</h1>
+            <p>A constructor in C++ is a special method that is automatically called when an object of a class is
+                created.
+                <br>
+                To create a constructor, use the same name as the class, followed by parentheses ()
+            </p>
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:blue">class</span>
+                    Student {
+                    <br>
+                    &nbsp;&nbsp;<span style="color:brown">public:</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+                    rollNo;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">string</span>
+                    name;
+                    <br>
+                    };
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div id="encapsulation" class="topic">
+            <h1 class="topic-title">Encapsulation</h1>
+            <p>The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve
+                this, you must declare class variables/attributes as <code>private</code> (cannot be accessed from
+                outside the class). If you want others to read or modify the value of a private member, you can provide
+                public <strong>get</strong> and <strong>set</strong> methods.
+            </p>
+
+            <h3 class="subtitle">Accessing Private Member(s)</h3>
+            <p>
+                To access a private attribute, use public "get" and "set" methods
+            </p>
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <span style="color:blue">class</span>
+                    Student {
+                    <br>
+                    &nbsp;&nbsp;<span style="color:brown">private:</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+                    rollNo;
+                    <br>
+                    &nbsp;&nbsp;<span style="color:brown">public:</span>
+
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Student() {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "Student Contstructor" ; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">void</span>
+                        setRollNo(<span style="color: blue;">int</span> r) {
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rollNo = r;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br>
+                        };
+                        <br><br>
+                        <span style="color:blue">int</span>
+                        main() {
+                        <br>
+                        &nbsp;&nbsp;<span style="color:rgb(34, 134, 9)">Student</span> obj;
+                        <br>
+                        &nbsp;&nbsp;return 0;
+                        <br>
+                        }
+
+
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>
+        <hr>
+
+        <div id="inheritance" class="topic">
+            <h1 class="topic-title">Inheritance</h1>
+            <p>In C++, it is possible to inherit attributes and methods from one class to another. We group the
+                "inheritance concept" into two categories:
+            <ul>
+                <li>
+                    derived class (child) - the class that inherits from another class
+
+
+                </li>
+                <li>
+                    base class (parent) - the class being inherited from
+                </li>
+            </ul>
+            To inherit from a class, use the : symbol.
+            <br>
+            In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class
+            (parent):
+            </p>
+
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <pre>
+<span style="color:green">// Base class</span> 
+<span style="color:blue;">class</span> Vehicle {
+    <span style="color: brown;">public:</span>
+        string brand = "Ford";
+        void honk() {
+        cout << "Tuut, tuut! \n" ;
+        }
+};
+
+<span style="color:green">// Derived class</span> 
+<span style="color:blue;">class</span> Car: <span style="color: brown;">public</span> Vehicle {
+    <span style="color: brown;">public:</span>
+        string model = "Mustang";
+};
+
+<span style="color:blue">int</span> main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + <span style="color:red;">" "</span> + myCar.model;
+  return 0;
+}
+                    </pre>
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>
+
+        <h3 class="subtitle">Why Inheritance?</h3>
+        <p>
+            Inheritance is useful for code reusability: reuse attributes and methods of an existing class when you
+            create a new class
+        </p>
+        <hr>
+
+        <div id="polymorphism" class="topic">
+            <h1 class="topic-title">Polymorphism</h1>
+            <p>Polymorphism means "many forms", and it occurs when we have many classes that are related to each other
+                by inheritance
+            </p>
+
+
+            <h3 class="subtitle">Example</h3>
+            <div class="code">
+                <div class="code-inner">
+                    <pre>
+<span style="color:green">// Base class</span> 
+<span style="color:blue;">class</span> Vehicle {
+    <span style="color: brown;">public:</span>
+        string brand = "Ford";
+        void print() {
+        cout << "This is a Vehicle \n" ;
+        }
+};
+                        
+<span style="color:green">// Derived class</span> 
+<span style="color:blue;">class</span> Car: <span style="color: brown;">public</span> Vehicle {
+    <span style="color: brown;">public:</span>
+        void print() {
+            cout << "This is a Car \n" ;
+        }
+};
+
+<span style="color:green">// Derived class</span> 
+<span style="color:blue;">class</span> Bike: <span style="color: brown;">public</span> Vehicle {
+    <span style="color: brown;">public:</span>
+        void print() {
+            cout << "This is a Bike \n" ;
+        }
+};
+                        
+<span style="color:blue">int</span> main() {
+    Car myCar;
+    Bike myBike
+    myCar.print();
+    myBike.print();
+    return 0;
+}
+                                            </pre>
+                </div>
+                <br>
+            </div>
+            <br>
+            <h3 class="subtitle">Why Polymorphism?</h3>
+            <p>
+                Polymorphism is useful for code reusability: reuse attributes and methods of an existing class when you
+                create a new class.
+            </p>
+        </div>
+        <hr>
+
+
         <div class="topic" id="about">
+            <h1 class="topic-title">About Us</h1>
             <div class="row">
                 <div class="column">
                     <div class="card">
@@ -311,7 +517,7 @@
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="images/usama.png" alt="Avatar" style="width:100%">
+                        <img src="images/usama.jpg" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b>Muhammad Usama</b></h4>
                             <p><a href="">mu155225@gmail.com</a></p>
