@@ -42,6 +42,7 @@ body {
 
 .left-nav a:hover {
     background-color: #799bff;
+    border-radius: 12px;
 }
 
 .main {
@@ -106,6 +107,10 @@ li {
     background-size: cover;
     position: relative;
     border-radius: 5px;
+}
+
+.main-title:hover{
+    opacity: 0.96;
 }
 
 .main-title-text {
